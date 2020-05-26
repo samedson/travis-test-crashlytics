@@ -1,0 +1,11 @@
+
+
+os: osx
+osx_image: xcode11.4
+
+jobs:
+  include:
+  - name: "Fabric Upload Symbols"
+    script: ./upload-symbols-fabric
+  - name: "Firebase Upload Symbols"
+    script: ./upload-symbols-firebase

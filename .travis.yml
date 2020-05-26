@@ -6,10 +6,9 @@ osx_image: xcode11.4
 jobs:
   include:
   - name: "Fabric Upload Symbols"
-    script: ./upload-symbols-fabric -p ios --gsp ./GoogleService-Info.plist -- CrashlyticsExample.app.dSYM --debug
+    script: ./upload-symbols-fabric -ai 1:670727383218:ios:98874fc5c0c9e42c4641ab -d -p ios -- CrashlyticsExample.app.dSYM.zio
   - name: "Firebase Upload Symbols"
-    script: ./upload-symbols-firebase -p ios --gsp ./GoogleService-Info.plist -- CrashlyticsExample.app.dSYM --debug
-
+    script: ./upload-symbols-firebase -ai 1:670727383218:ios:98874fc5c0c9e42c4641ab -d -p ios -- CrashlyticsExample.app.dSYM.zio
 
 
 
